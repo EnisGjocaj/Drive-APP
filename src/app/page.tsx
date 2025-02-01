@@ -179,7 +179,7 @@ function DriveContent() {
                       <div className="text-sm font-medium">{file.name}</div>
                     </div>
                   ) : (
-                    <Link href={file.url || "#"} className="block space-y-3" onClick={(e) => e.stopPropagation()}>
+                    <Link href={file.url ?? "#"} className="block space-y-3" onClick={(e) => e.stopPropagation()}>
                       <div className="w-full aspect-square rounded-lg border-2 border-dashed border-border flex items-center justify-center">
                         <FileIcon type={file.type} className="w-8 h-8 text-blue-500" />
                       </div>
@@ -225,7 +225,7 @@ function DriveContent() {
                             <span>{file.name}</span>
                           ) : (
                             <Link
-                              href={file.url || "#"}
+                              href={file.url ?? "#"}
                               onClick={(e) => e.stopPropagation()}
                               className="hover:underline"
                             >
@@ -235,7 +235,7 @@ function DriveContent() {
                         </div>
                       </TableCell>
                       <TableCell className="capitalize">{file.type}</TableCell>
-                      <TableCell>{file.size || "--"}</TableCell>
+                      <TableCell>{file.size ?? "--"}</TableCell>
                       <TableCell>{file.modified}</TableCell>
                     </TableRow>
                   ))}
