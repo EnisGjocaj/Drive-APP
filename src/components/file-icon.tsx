@@ -1,4 +1,4 @@
-import type { FileType } from "types/file-system"
+import type { FileType } from "~/types/file-system"
 import { File, FileImage, FileText, Folder, Music, Video } from "lucide-react"
 
 interface FileIconProps {

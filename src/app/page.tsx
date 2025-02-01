@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import type { FileItem } from "types/file-system"
+import type { FileItem } from "~/types/file-system"
 import { mockFiles } from "~/lib/mock-data"
 import { FileIcon } from "~/components/file-icon"
 import { ViewToggle } from "~/components/view-toggle"
